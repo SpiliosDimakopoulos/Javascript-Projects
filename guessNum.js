@@ -22,7 +22,7 @@ while (running) {
             alert(`Too high. Try again!`);
         } else {
             alert(`Well Done! You found the correct number! (You win nothing btw). It took you ${attempts} attempts!`);
-            running = false; // End the loop
+            running = false;
         }
     }
 }
