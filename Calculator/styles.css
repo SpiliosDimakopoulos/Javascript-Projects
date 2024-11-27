@@ -1,11 +1,10 @@
-
 body {
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(240, 240, 240); 
 }
 
 #calculator {
@@ -14,6 +13,7 @@ body {
     border-radius: 15px;
     max-width: 500px;
     overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); 
 }
 
 #display {
@@ -21,16 +21,19 @@ body {
     padding: 20px;
     font-size: 5rem;
     color: white;
-    text-align: left;
+    text-align: left; 
     border: none;
-    background-color: rgb(58, 58, 58);;
+    background-color: rgb(58, 58, 58);
+    border-bottom: 2px solid rgb(85, 85, 85); 
 }
 
 #keys {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 15px; 
     padding: 25px;
+    background-color: rgb(68, 68, 68); 
+    border-top: 2px solid rgb(85, 85, 85);
 }
 
 button {
@@ -43,24 +46,44 @@ button {
     font-size: 3em;
     font-weight: bold;
     cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease;
 }
 
 button:hover {
     background-color: rgb(104, 104, 104);
+    transform: scale(1.05);
 }
 
 button:active {
     background-color: rgb(124, 124, 124);
+    transform: scale(0.95);
 }
 
 .operator-btn {
     background-color: rgb(231, 153, 51);
+    box-shadow: 0 5px 10px rgba(231, 153, 51, 0.3); 
 }
 
 .operator-btn:hover {
     background-color: rgb(255, 175, 69);
+    transform: scale(1.05);
 }
 
 .operator-btn:active {
     background-color: rgb(255, 184, 91);
+    transform: scale(0.95);
+}
+
+button.clear-btn {
+    background-color: rgb(220, 53, 69); 
+    color: white;
+}
+
+button.clear-btn:hover {
+    background-color: rgb(245, 66, 86);
+}
+
+button.clear-btn:active {
+    background-color: rgb(255, 82, 100);
 }
